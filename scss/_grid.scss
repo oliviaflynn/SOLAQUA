@@ -1,0 +1,111 @@
+/***************************
+****************************
+Media Q Grid layout Phone (max width 450px)
+****************************
+***************************/
+
+@media (max-width: 450px){
+
+#wrapper {
+    
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "aside aside"
+    "main main"
+    "main main"
+    "main main"
+    "foot foot";
+}
+
+#head {
+    grid-area: head;
+}
+
+#aside {
+    grid-area: aside;
+}
+
+#main {
+    grid-area: main;
+}
+
+#foot {
+    grid-area: foot;
+}
+}
+
+/***************************
+****************************
+Media Q Grid layout Tablet (max width 1050px)
+****************************
+***************************/
+@media (max-width: 1050px){
+
+    #wrapper {
+        display: grid;
+        grid-template-areas: 
+        "head head"
+        "aside aside"
+        "main main"
+        "main main"
+        "main main"
+        "foot foot";
+    }
+    
+    #head {
+        grid-area: head;
+    }
+    
+    #aside {
+        grid-area: aside;
+    }
+    
+    #main {
+        grid-area: main;
+    }
+    
+    #foot {
+        grid-area: foot;
+    }
+    }
+
+    /***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px){
+
+    #wrapper {
+        
+        
+        display: grid;
+        grid-template-areas: 
+        "head head"
+        "aside main"
+        "aside main"
+        "aside main"
+        "aside main"
+        "foot foot";
+    }
+    
+    #head {
+        grid-area: head;
+    }
+    
+    #aside {
+        grid-area: aside;
+        margin-left: 9.375%; /* 90 / 960 */ 
+    }
+    
+    #main {
+        margin-right: 9.375%; /* 90 / 960 */
+        grid-area: main;
+    }
+    
+    #foot {
+      
+        grid-area: foot;
+    }
+    }

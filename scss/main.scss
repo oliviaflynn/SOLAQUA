@@ -1,7 +1,11 @@
 //Vendor
 @import 'vendor/reset';
 
+//Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
 
 //Project
-
+@import 'grid';
 @import 'headings';
+@import 'nav';
+@import 'footer';
