@@ -11,6 +11,7 @@ Media Q Grid layout Phone (max width 450px)
     display: grid;
     grid-template-areas: 
     "head head"
+    "photo photo"
     "aside aside"
     "main main"
     "main main"
@@ -24,7 +25,14 @@ Media Q Grid layout Phone (max width 450px)
 
 #aside {
     grid-area: aside;
+    display: none;
 }
+
+#photo {
+    grid-area: photo;
+
+}
+
 
 #main {
     grid-area: main;
@@ -46,6 +54,7 @@ Media Q Grid layout Tablet (max width 1050px)
         display: grid;
         grid-template-areas: 
         "head head"
+        "aside photo"
         "aside aside"
         "main main"
         "main main"
@@ -59,6 +68,10 @@ Media Q Grid layout Tablet (max width 1050px)
     
     #aside {
         grid-area: aside;
+    }
+
+    #photo {
+        grid-area: photo;
     }
     
     #main {
@@ -83,6 +96,7 @@ Media Q Grid layout Desktop (min width 1060px)
         display: grid;
         grid-template-areas: 
         "head head"
+        "aside photo"
         "aside main"
         "aside main"
         "aside main"
@@ -96,11 +110,22 @@ Media Q Grid layout Desktop (min width 1060px)
     
     #aside {
         grid-area: aside;
-        margin-left: 9.375%; /* 90 / 960 */ 
+        width: 25%; /* 240 / 960 */ 
+        margin-left:  9.375%; /* 90 / 960 */ 
+    }
+
+    #photo {
+        grid-area: photo;
+        width: 56.25%; /* 540 / 960 */ 
+        margin-left: 34.375%; /* 330 / 960 */ 
+        margin-right: 9.375%; /* 90 / 960 */ 
     }
     
+    
     #main {
-        margin-right: 9.375%; /* 90 / 960 */
+        width: 56.25%; /* 540 / 960 */ 
+        margin-left: 34.375%; /* 330 / 960 */ 
+        margin-right: 9.375%; /* 90 / 960 */ 
         grid-area: main;
     }
     
