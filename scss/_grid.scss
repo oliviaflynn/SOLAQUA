@@ -54,7 +54,7 @@ Media Q Grid layout Tablet (max width 1050px)
         display: grid;
         grid-template-areas: 
         "head head"
-        "aside photo"
+        "photo photo"
         "aside aside"
         "main main"
         "main main"
@@ -68,6 +68,7 @@ Media Q Grid layout Tablet (max width 1050px)
     
     #aside {
         grid-area: aside;
+        display: none;
     }
 
     #photo {

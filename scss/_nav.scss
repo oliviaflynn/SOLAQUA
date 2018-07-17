@@ -3,14 +3,13 @@
     font-family: 'Roboto', sans-serif;
     background-color: #0076b2;
     overflow: hidden;
-
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -68,7 +67,7 @@
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #054a6d;
+    background-color: #044b70;
     color: white;
 }
 
