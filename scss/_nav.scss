@@ -1,8 +1,8 @@
  /* Add a black background color to the top navigation */
  .topnav {
-    font-family: 'Roboto', sans-serif;
     background-color: #0076b2;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style the links inside the navigation bar */
@@ -19,7 +19,7 @@
 /* Add an active class to highlight the current page */
 .active {
     background-color: #fabe44;
-    color: black;
+    color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -67,7 +67,7 @@
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #044b70;
+    background-color: #002d44;
     color: white;
 }
 

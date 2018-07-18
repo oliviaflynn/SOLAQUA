@@ -1,0 +1,25 @@
+#icons {
+    display: grid;
+    grid-template-areas: 
+    "selfBuild homeOwner architects commerical";
+}
+
+.item1 {
+    grid-area: selfBuild;
+}
+
+.item2 {
+    grid-area: homeOwner;
+}
+
+.item3 {
+    grid-area: architects;
+}
+
+.item4 {
+   grid-area: commerical;
+}
+
+figcaption {
+ text-align: justify;
+}

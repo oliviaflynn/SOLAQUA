@@ -128,18 +128,58 @@ Media Q Grid layout Desktop (min width 1060px)
   #foot {
     grid-area: foot; } }
 
+#main {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  margin-bottom: 1.5%;
+  background-color: #f6f3f3; }
+
 h1 {
   color: #000000;
   text-decoration: underline #fabe44;
   font-family: 'Oswald', sans-serif;
   text-align: center;
-  font-size: 25pt; }
+  font-size: 25pt;
+  margin-bottom: 5%; }
+
+p {
+  padding-bottom: 5%; }
+
+.centre {
+  text-align: center;
+  font-size: 15pt; }
+
+#icons {
+  display: grid;
+  grid-template-areas: "selfBuild homeOwner architects commerical"; }
+
+.item1 {
+  grid-area: selfBuild; }
+
+.item2 {
+  grid-area: homeOwner; }
+
+.item3 {
+  grid-area: architects; }
+
+.item4 {
+  grid-area: commerical; }
+
+figcaption {
+  text-align: justify; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  font-family: 'Roboto', sans-serif;
   background-color: #0076b2;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -154,7 +194,7 @@ h1 {
 /* Add an active class to highlight the current page */
 .active {
   background-color: #fabe44;
-  color: black; }
+  color: white; }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -196,7 +236,7 @@ h1 {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #044b70;
+  background-color: #002d44;
   color: white; }
 
 /* Add a grey background to dropdown links on hover */
@@ -236,6 +276,10 @@ h1 {
     display: block;
     width: 100%;
     text-align: left; } }
+
+#aside {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e8eaea; }
 
 #quoteForm {
   font-family: 'Roboto', sans-serif;
