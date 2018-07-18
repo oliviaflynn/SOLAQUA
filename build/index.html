@@ -36,8 +36,7 @@
 
 
 
-    <div id="aside">
-        <!-- Sticky Form -->
+    <div id="aside">        <!-- Sticky Form -->
 
         <form id="quoteForm" action="/my-handling-form-page" method="post">
             <h1>Get a quote now</h1>
@@ -53,16 +52,41 @@
               <div>
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message"></textarea>
-              </div>
+              </div>          
 
-              <div class="button">
-                <button type="submit">Send your message</button>
-              </div>
+                    <fieldset>
+
+                        <legend>Select an area:</legend>
+                
+                        <div>
+                            <input type="radio" id="corkcounty" name="area" checked />
+                            <label for="corkcounty">Cork County</label>
+                        </div>
+                
+                        <div>
+                            <input type="radio" id="corkcity" name="area" />
+                            <label for="corkcity">Cork City</label>
+                        </div>
+                
+                        <div>
+                            <input type="radio" id="othercounty" name="area" />
+                            <label for="othercounty">Other County</label>
+                        </div>
+                
+                    </fieldset>
+
+                    <div class="button">
+                            <button type="submit">Get your personal quote</button>
+                          </div>
+                
 
         </form>            
 
     </div>  
 
+    <div id="button">
+        <button class="quoteButton">Get a quote now</button>
+    </div>
    
     
 <div id="photo">
@@ -110,7 +134,7 @@
 </div>
 
 
-
+<button onclick="topFunction()" id="topButton" title="Go to top">&#708; Back to Top</button> 
 
 
     <div id="foot">All rights reserved website &copy; 2018 SOLAQUA Ireland.  <a href="acessiblity.html">Accessibility conditions</a> | <a href="terms.html">Trade Terms and Conditions</a> | <a href="privacy.html">Privacy Statement</a></div>
@@ -118,6 +142,6 @@
     <!--End Grid Wrapper-->
     </div>
 
-    <script src="js/script.js"></script>   
+    <script src="../js/script.js"></script>   
 </body>
 </html>

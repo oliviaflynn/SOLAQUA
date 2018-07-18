@@ -12,6 +12,7 @@ Media Q Grid layout Phone (max width 450px)
     grid-template-areas: 
     "head head"
     "photo photo"
+    "button button"
     "aside aside"
     "main main"
     "main main"
@@ -31,6 +32,11 @@ Media Q Grid layout Phone (max width 450px)
 #photo {
     grid-area: photo;
 
+}
+
+#button {
+    grid-area: button;
+   
 }
 
 
@@ -55,6 +61,7 @@ Media Q Grid layout Tablet (max width 1050px)
         grid-template-areas: 
         "head head"
         "photo photo"
+        "button button"
         "aside aside"
         "main main"
         "main main"
@@ -77,6 +84,11 @@ Media Q Grid layout Tablet (max width 1050px)
     
     #main {
         grid-area: main;
+    }
+
+    #button {
+        grid-area: button;
+       
     }
     
     #foot {
@@ -128,6 +140,11 @@ Media Q Grid layout Desktop (min width 1060px)
         margin-left: 34.375%; /* 330 / 960 */ 
         margin-right: 9.375%; /* 90 / 960 */ 
         grid-area: main;
+    }
+
+    #button {
+        grid-area: button;
+        display: none;
     }
     
     #foot {

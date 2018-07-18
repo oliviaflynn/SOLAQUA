@@ -1,25 +1,123 @@
-#icons {
-    display: grid;
-    grid-template-areas: 
-    "selfBuild homeOwner architects commerical";
-}
+
+/***************************
+****************************
+Media Q Grid layout Phone (max width 450px)
+****************************
+***************************/
+
+@media (max-width: 450px){
+
+    #icons {
+        
+        display: grid;
+        grid-template-areas: 
+        "selfBuild homeOwner"        
+        "architects commerical"     
+      ;
+    }
 
 .item1 {
     grid-area: selfBuild;
+   
 }
 
 .item2 {
     grid-area: homeOwner;
+    
 }
 
 .item3 {
     grid-area: architects;
+    
 }
 
 .item4 {
    grid-area: commerical;
+  
 }
 
 figcaption {
  text-align: justify;
+}
+}
+
+/***************************
+****************************
+Media Q Grid layout Tablet (max width 1050px)
+****************************
+***************************/
+@media (max-width: 1050px){
+
+    #icons {
+        
+        display: grid;
+        grid-template-areas: 
+        "selfBuild homeOwner"        
+        "architects commerical"     
+      ;
+    }
+
+.item1 {
+    grid-area: selfBuild;
+   
+}
+
+.item2 {
+    grid-area: homeOwner;
+    
+}
+
+.item3 {
+    grid-area: architects;
+    
+}
+
+.item4 {
+   grid-area: commerical;
+  
+}
+
+figcaption {
+ text-align: justify;
+}
+}
+
+  /***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px){
+
+    #icons {
+        
+        display: grid;
+        grid-template-areas: 
+        "selfBuild homeOwner architects commerical"     
+      ;
+    }
+
+.item1 {
+    grid-area: selfBuild;
+   
+}
+
+.item2 {
+    grid-area: homeOwner;
+    
+}
+
+.item3 {
+    grid-area: architects;
+    
+}
+
+.item4 {
+   grid-area: commerical;
+  
+}
+
+figcaption {
+ text-align: justify;
+}
 }

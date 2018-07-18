@@ -46,9 +46,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-image: url("img/bg.jpg");
-  background-color: antiquewhite; }
+#wrapper {
+  background-image: url("img/bg.jpg"); }
 
 /***************************
 ****************************
@@ -58,7 +57,7 @@ Media Q Grid layout Phone (max width 450px)
 @media (max-width: 450px) {
   #wrapper {
     display: grid;
-    grid-template-areas: "head head" "photo photo" "aside aside" "main main" "main main" "main main" "foot foot"; }
+    grid-template-areas: "head head" "photo photo" "button button" "aside aside" "main main" "main main" "main main" "foot foot"; }
   #head {
     grid-area: head; }
   #aside {
@@ -66,6 +65,8 @@ Media Q Grid layout Phone (max width 450px)
     display: none; }
   #photo {
     grid-area: photo; }
+  #button {
+    grid-area: button; }
   #main {
     grid-area: main; }
   #foot {
@@ -79,7 +80,7 @@ Media Q Grid layout Tablet (max width 1050px)
 @media (max-width: 1050px) {
   #wrapper {
     display: grid;
-    grid-template-areas: "head head" "photo photo" "aside aside" "main main" "main main" "main main" "foot foot"; }
+    grid-template-areas: "head head" "photo photo" "button button" "aside aside" "main main" "main main" "main main" "foot foot"; }
   #head {
     grid-area: head; }
   #aside {
@@ -89,6 +90,8 @@ Media Q Grid layout Tablet (max width 1050px)
     grid-area: photo; }
   #main {
     grid-area: main; }
+  #button {
+    grid-area: button; }
   #foot {
     grid-area: foot; } }
 
@@ -125,6 +128,9 @@ Media Q Grid layout Desktop (min width 1060px)
     margin-right: 9.375%;
     /* 90 / 960 */
     grid-area: main; }
+  #button {
+    grid-area: button;
+    display: none; }
   #foot {
     grid-area: foot; } }
 
@@ -152,28 +158,109 @@ p {
   text-align: center;
   font-size: 15pt; }
 
-#icons {
-  display: grid;
-  grid-template-areas: "selfBuild homeOwner architects commerical"; }
+/***************************
+****************************
+Media Q Grid layout Phone (max width 450px)
+****************************
+***************************/
+@media (max-width: 450px) {
+  #icons {
+    display: grid;
+    grid-template-areas: "selfBuild homeOwner"         "architects commerical"; }
+  .item1 {
+    grid-area: selfBuild; }
+  .item2 {
+    grid-area: homeOwner; }
+  .item3 {
+    grid-area: architects; }
+  .item4 {
+    grid-area: commerical; }
+  figcaption {
+    text-align: justify; } }
 
-.item1 {
-  grid-area: selfBuild; }
+/***************************
+****************************
+Media Q Grid layout Tablet (max width 1050px)
+****************************
+***************************/
+@media (max-width: 1050px) {
+  #icons {
+    display: grid;
+    grid-template-areas: "selfBuild homeOwner"         "architects commerical"; }
+  .item1 {
+    grid-area: selfBuild; }
+  .item2 {
+    grid-area: homeOwner; }
+  .item3 {
+    grid-area: architects; }
+  .item4 {
+    grid-area: commerical; }
+  figcaption {
+    text-align: justify; } }
 
-.item2 {
-  grid-area: homeOwner; }
-
-.item3 {
-  grid-area: architects; }
-
-.item4 {
-  grid-area: commerical; }
-
-figcaption {
-  text-align: justify; }
+/***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px) {
+  #icons {
+    display: grid;
+    grid-template-areas: "selfBuild homeOwner architects commerical"; }
+  .item1 {
+    grid-area: selfBuild; }
+  .item2 {
+    grid-area: homeOwner; }
+  .item3 {
+    grid-area: architects; }
+  .item4 {
+    grid-area: commerical; }
+  figcaption {
+    text-align: justify; } }
 
 img {
   max-width: 100%;
   height: auto; }
+
+.quoteButton {
+  background-color: #fabe44;
+  text-align: center;
+  height: 50px;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20pt; }
+
+#topButton {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #fabe44;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */ }
+
+#topButton:hover {
+  background-color: #002d44;
+  /* Add a dark-grey background on hover */ }
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -279,7 +366,9 @@ img {
 
 #aside {
   font-family: 'Roboto', sans-serif;
-  background-color: #e8eaea; }
+  background-color: #e8eaea;
+  width: 25%;
+  /* 240 / 960 */ }
 
 #quoteForm {
   font-family: 'Roboto', sans-serif;
@@ -288,7 +377,6 @@ img {
   margin-left: 2%;
   border: solid 5px #fabe44;
   max-width: 240px;
-  width: 25%;
   background-color: #ffffff;
   padding: 20px;
   color: #000000;
@@ -323,6 +411,18 @@ button {
   /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
   margin-left: .5em; }
+
+/*radio*/
+legend {
+  background-color: #fabe44;
+  color: #000000;
+  padding: 3px 6px; }
+
+.output {
+  font: 1rem 'Fira Sans', sans-serif; }
+
+input {
+  margin: .4rem; }
 
 #foot {
   font-family: 'Roboto', sans-serif;

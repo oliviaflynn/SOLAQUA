@@ -5,7 +5,6 @@ margin-top: 1%;
 margin-left: 2%;
 border: solid 5px #fabe44;
 max-width: 240px;
-width: 25%;
 background-color: #ffffff;
 padding: 20px;
 color: #000000;
@@ -49,3 +48,19 @@ input, textarea {
        between the labels and their text fields */
     margin-left: .5em;
   }
+
+  /*radio*/
+
+  legend {
+    background-color: #fabe44;
+    color: #000000;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
