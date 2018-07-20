@@ -68,7 +68,10 @@ Media Q Grid layout Phone (max width 450px)
   #button {
     grid-area: button; }
   #main {
-    grid-area: main; }
+    grid-area: main;
+    margin-right: 2%;
+    padding-right: 2%;
+    text-align: center; }
   #foot {
     grid-area: foot; } }
 
@@ -151,8 +154,22 @@ h1 {
   font-size: 25pt;
   margin-bottom: 5%; }
 
+h2 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline #fabe44;
+  font-size: 15pt;
+  margin-bottom: 5%; }
+
+h3 {
+  display: inline;
+  font-size: 15pt;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline #fabe44; }
+
 p {
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  margin-right: 5%;
+  letter-spacing: 0.5pt; }
 
 .centre {
   text-align: center;
@@ -423,6 +440,14 @@ legend {
 
 input {
   margin: .4rem; }
+
+input[type='radio'], label {
+  vertical-align: baseline;
+  padding: 10px;
+  margin: 10px; }
+
+legend {
+  margin-bottom: 5%; }
 
 #foot {
   font-family: 'Roboto', sans-serif;

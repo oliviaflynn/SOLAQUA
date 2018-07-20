@@ -56,26 +56,22 @@
 
                     <fieldset>
 
-                        <legend>Select an area:</legend>
-                
+                        <legend>Select an area:</legend>                        
                         <div>
                             <input type="radio" id="corkcounty" name="area" checked />
                             <label for="corkcounty">Cork County</label>
-                        </div>
-                
-                        <div>
+                        </div>                
+                        <div id="radio">
                             <input type="radio" id="corkcity" name="area" />
                             <label for="corkcity">Cork City</label>
-                        </div>
-                
+                        </div>                
                         <div>
-                            <input type="radio" id="othercounty" name="area" />
+                            <input   type="radio" id="othercounty" name="area" />
                             <label for="othercounty">Other County</label>
-                        </div>
-                
+                        </div>                
                     </fieldset>
 
-                    <div class="button">
+                        <div class="button">
                             <button type="submit">Get your personal quote</button>
                           </div>
                 
@@ -96,20 +92,21 @@
 </div>
 
 <div id="main">    
-        <p>Welcome to SOLAQUA, home of the best solar panels in Ireland. We specialise in Kingspan Solar Panel installations for homes and businesses and have done so for many years.</p>
-        <p>Sometimes quality such as ours comes with inflated prices that outweigh the benefits. 
-            <strong>Not SOLAQUA.</strong>
-           <p> We buy Quality product direct from manufacturers and import it direct to our warehouse.
-            There are no middlemen in the process so we are ‘Renewable Energy Direct. We have almost ten
-            years of supplier relations and as many years sourcing products. Strong buying power means
-            we can supply top quality products at best Price/Product balance.</p>
-            <p class="centre"><strong>We have experience working with all kinds of customer needs.</strong></p>
+        <h1>Welcome to SOLAQUA, home of the best solar panels in Ireland.</h1>
+        <p>Use our <a href="contact.html">quote form</a> to get your own personal quote for free.</p>
+        <p>For information about us, <a href="about.html">click here.</a></p>
 
 <p>Our solar panel systems and condensing boilers are eligible for an <a target="_blank" href="https://www.seai.ie/grants/home-grants/better-energy-homes/">SEAI grant</a> and the VAT refund scheme also.</p>
 
-            <p>If it's just a price you’re looking for, why not try our practical online calculator for estimating
-            the cost of installing any of our products onto your home.</p>
-<div id="icons">
+
+
+        <h1>Weather</h1></header>
+        <h2>Today's forecast</h2>
+        <section id="content"></section>
+
+        <p>We have experience working with all kinds of clients:</p>
+
+<div id="icons">    
         <figure class="item1">
             <img src="img/selfbuild.png" alt="Self Builders">
             <figcaption>Self Builders</figcaption>
@@ -143,5 +140,6 @@
     </div>
 
     <script src="../js/script.js"></script>   
+    <script src="http://api.openweathermap.org/data/2.5/weather?id=5371965&amp;APPID=86627e940fbbed26af49af8efca18f60&amp;callback=cat"></script>
 </body>
 </html>

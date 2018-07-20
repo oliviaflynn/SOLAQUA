@@ -11,31 +11,32 @@
 
     <!--Wrapper Holding Grid-->
     <div id="wrapper">
-        
-
-    <div id="head">
-        <!-- Navigation -->
+            
+        <!-- Navigation -->      
+        <div id="head">
             <div class="topnav" id="myTopnav">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="testimonials.html">Testimonials</a>
-                    <a href="contact.html">Contact</a>
-                    <div class="dropdown">
-                      <button class="dropbtn">Solar Power &darr;
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown-content">
-                        <a href="solarwater.html">Solar Hot Water</a>
-                        <a href="solarelectric.html">Solar Electric</a>                        
-                      </div>
-                    </div>
-                    <a href="#about">About</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-                  </div> 
-    </div>
+                <a href="index.html" >Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <div class="dropdown" >
+                  <button class="dropbtn" >Solar Energy &#11015;
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="solarelectric.html" class="active">Solar Electricity</a>
+                    <a href="solarwater.html">Solar Hot Water</a>
+                  </div>
+                </div>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div> 
+          </div>
+           
+         
 
 
-    <div id="aside">
-        <!-- Sticky Form -->
+
+    <div id="aside">        <!-- Sticky Form -->
 
         <form id="quoteForm" action="/my-handling-form-page" method="post">
             <h1>Get a quote now</h1>
@@ -51,16 +52,37 @@
               <div>
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message"></textarea>
-              </div>
+              </div>          
 
-              <div class="button">
-                <button type="submit">Send your message</button>
-              </div>
+                    <fieldset>
 
-        </form>      
+                        <legend>Select an area:</legend>                        
+                        <div>
+                            <input type="radio" id="corkcounty" name="area" checked />
+                            <label for="corkcounty">Cork County</label>
+                        </div>                
+                        <div id="radio">
+                            <input type="radio" id="corkcity" name="area" />
+                            <label for="corkcity">Cork City</label>
+                        </div>                
+                        <div>
+                            <input   type="radio" id="othercounty" name="area" />
+                            <label for="othercounty">Other County</label>
+                        </div>                
+                    </fieldset>
+
+                        <div class="button">
+                            <button type="submit">Get your personal quote</button>
+                          </div>
+                
+
+        </form>            
 
     </div>  
 
+    <div id="button">
+        <button class="quoteButton">Get a quote now</button>
+    </div>
    
     
 <div id="photo">
@@ -69,30 +91,47 @@
    
 </div>
 
-<div id="main">
+<div id="main">    
+        <h1>Is solar power in Ireland a Myth?</h1>
+<p>Simply put; no.</p>
+<h3>Myth: Solar panels do not work well in cloudy places.</h3>
+<p><h3>Fact:</h3> Most solar panels actually work best in cold conditions. They use light, not heat, to generate electricity. Cold temperatures increase their conductivity, letting electricity flow more efficiently. As solar panels heat up, they generate less electricity from the same amount of light.</p>
+Have you decided to invest in Solar Panels after reading Top 8 Myths about Solar Energy? If you would like to find out more – don’t hesitate to contact us on:
+Tel: 021 428 94 07
+<br/>
+<div id="icons">    
+        <figure class="item1">
+            <img src="img/selfbuild.png" alt="Self Builders">
+            <figcaption>Self Builders</figcaption>
+        </figure>
 
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        <figure class="item2">
+                <img src="img/homeowners.png" alt="Home Owners">
+                <figcaption>Home Owners</figcaption>
+            </figure>
 
-        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-        
-        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-        
-        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-        
-        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+            <figure class="item3">
+                    <img src="img/architects.png" alt="Architects">
+                    <figcaption>Architects</figcaption>
+                </figure>
 
+                <figure class="item4">
+                        <img src="img/commerical.png" alt="Commerical">
+                        <figcaption>Commericial</figcaption>
+                    </figure>
+
+</div>
 </div>
 
 
+<button onclick="topFunction()" id="topButton" title="Go to top">&#708; Back to Top</button> 
 
 
-
-    <div id="foot">All rights reserved website &copy; 2018 SOLAQUA Ireland.  Accessibility conditions | Trade Terms and Conditions | Privacy.</div>
-
+    <div id="foot">All rights reserved website &copy; 2018 SOLAQUA Ireland.  <a href="acessiblity.html">Accessibility conditions</a> | <a href="terms.html">Trade Terms and Conditions</a> | <a href="privacy.html">Privacy Statement</a></div>
 
     <!--End Grid Wrapper-->
     </div>
 
-    <script src="js/script.min.js"></script>
+    <script src="../js/script.js"></script>   
 </body>
 </html>
