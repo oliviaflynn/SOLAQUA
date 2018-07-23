@@ -132,17 +132,19 @@ Media Q Grid layout Desktop (min width 1060px)
 
     #photo {
         grid-area: photo;
+        margin-top: 1%;
         width: 56.25%; /* 540 / 960 */ 
-        margin-left: 34.375%; /* 330 / 960 */ 
-        margin-right: 9.375%; /* 90 / 960 */ 
+        margin-left: 43.75%; /* 420 / 960 */
+        margin-right:  9.375%; /* 90 / 960 */
+        
     }
     
     
     #main {
-        width: 56.25%; /* 540 / 960 */ 
-        margin-left: 34.375%; /* 330 / 960 */ 
-        margin-right: 9.375%; /* 90 / 960 */ 
+        width: 56.25%; /* 540 / 960 */        
         grid-area: main;
+        margin-left: 43.75%; /* 420 / 960 */ 
+        margin-right:  9.375%; /* 90 / 960 */
     }
 
     #button {
@@ -150,8 +152,7 @@ Media Q Grid layout Desktop (min width 1060px)
         display: none;
     }
     
-    #foot {
-      
+    #foot {      
         grid-area: foot;
     }
     }

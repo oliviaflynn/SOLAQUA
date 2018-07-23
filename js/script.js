@@ -6,6 +6,7 @@ function cat(data) {                           // Callback when JSON loads
       // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
       //for (var i = 0; i < data.events.length; i++) {    // Loop through object
        newContent += '<div class="event">';
+       
        newContent += '<p>' + data.name + '</p>';
        newContent += '<p>' + data.weather[0].main + '</p>';
        newContent += '<p>' + data.weather[0].description + '</p>';
@@ -60,3 +61,20 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
 
+
+//photo slideshow 
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}

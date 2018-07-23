@@ -28,36 +28,54 @@
                         <a href="solarelectric.html">Solar Electric</a>                        
                       </div>
                     </div>
-                    <a href="#about">About</a>
+                    <a href="testimonials.html">Testimonials</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
                   </div> 
     </div>
 
 
     <div id="aside">
-        <!-- Sticky Form -->
+   <!-- Sticky Form -->
 
-        <form id="quoteForm" action="/my-handling-form-page" method="post">
-            <h1>Get a quote now</h1>
-            <br/>
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-              </div>
-              <div>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_mail">
-              </div>
-              <div>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </div>
+   <form id="quoteForm" action="/my-handling-form-page" method="post">
+    <h1>Get a quote now</h1>
+    <br/>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+      </div>
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail">
+      </div>
+      <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </div>          
 
-              <div class="button">
-                <button type="submit">Send your message</button>
-              </div>
+            <fieldset>
 
-        </form>      
+                <legend>Select an area:</legend>                        
+                <div>
+                    <input type="radio" id="corkcounty" name="area" checked />
+                    <label for="corkcounty">Cork County</label>
+                </div>                
+                <div id="radio">
+                    <input type="radio" id="corkcity" name="area" />
+                    <label for="corkcity">Cork City</label>
+                </div>                
+                <div>
+                    <input   type="radio" id="othercounty" name="area" />
+                    <label for="othercounty">Other County</label>
+                </div>                
+            </fieldset>
+
+                <div class="button">
+                    <button type="submit">Get your personal quote</button>
+                  </div>
+        
+
+</form>                
 
     </div>  
 
@@ -65,7 +83,13 @@
     
 <div id="photo">
 
-    <img src="img/front.jpg" alt="Picture showing solar panels on rooftop with text on top">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="img/1.jpg" style="width:100%">
+        <img class="mySlides" src="img/2.jpg" style="width:100%">
+        <img class="mySlides" src="img/3.jpg" style="width:100%">
+        <img class="mySlides" src="img/4.jpg" style="width:100%">    
+        
+      </div>
    
 </div>
 
