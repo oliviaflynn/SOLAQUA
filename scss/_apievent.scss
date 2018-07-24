@@ -1,3 +1,10 @@
+    /***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px){
+
 .event {
     background-color: #91b21a;
     text-align: center;
@@ -9,4 +16,38 @@
     margin-right:25%;
     padding-top: 5%;
  
+}
+
+}
+
+/***************************
+****************************
+Media Q Grid layout Tablet (max width 1050px)
+****************************
+***************************/
+@media (max-width: 1050px){
+
+}
+
+ /***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px){
+
+
+    .event {
+        background-color: #91b21a;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15pt;
+        margin-bottom: 10%;
+        margin-top:5%;
+        margin-left:5%;
+        margin-right:5%;
+        padding-top: 5%;
+     
+    }
+
 }

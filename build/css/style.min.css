@@ -143,7 +143,8 @@ Media Q Grid layout Desktop (min width 1060px)
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25pt; }
+  font-size: 25pt;
+  margin-bottom: 1.5%; }
 
 .h1form {
   color: #000000;
@@ -173,6 +174,15 @@ p {
 .centre {
   text-align: center;
   font-size: 15pt; }
+
+.contactinfo {
+  letter-spacing: 2pt;
+  text-align: center;
+  background-color: #ffcc00;
+  position: absolute;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%; }
 
 #photo {
   width: 56.25%;
@@ -241,16 +251,44 @@ Media Q Grid layout Desktop (min width 1060px)
 img {
   height: auto; }
 
-.event {
-  background-color: #91b21a;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 15pt;
-  margin-bottom: 10%;
-  margin-top: 5%;
-  margin-left: 25%;
-  margin-right: 25%;
-  padding-top: 5%; }
+/***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px) {
+  .event {
+    background-color: #91b21a;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5%; } }
+
+/***************************
+****************************
+Media Q Grid layout Tablet (max width 1050px)
+****************************
+***************************/
+/***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px) {
+  .event {
+    background-color: #91b21a;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%; } }
 
 .quoteButton {
   background-color: #fabe44;
@@ -445,6 +483,15 @@ legend {
   background-color: #fabe44;
   color: #000000;
   padding: 3px 6px; }
+
+label, input {
+  display: block; }
+
+label {
+  margin-bottom: 20px; }
+
+blockquote {
+  margin-top: 5%; }
 
 #foot {
   font-family: 'Roboto', sans-serif;

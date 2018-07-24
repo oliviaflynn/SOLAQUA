@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SOLAQUA: Solar Heating Specialists</title>
+
+    
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
 </head>
 <body>    
 
@@ -44,35 +57,38 @@
             <h1>Get a quote now</h1>
             <br/>
             <div>
-                <label for="name">Name:</label>
+                <label for="name">Name:
                 <input type="text" id="name" name="user_name">
+            </label>
               </div>
               <div>
-                <label for="mail">E-mail:</label>
+                <label for="mail">E-mail:
                 <input type="email" id="mail" name="user_mail">
+            </label>
               </div>
               <div>
-                <label for="msg">Message:</label>
+                <label for="msg">Message:
                 <textarea id="msg" name="user_message"></textarea>
+            </label>
               </div>          
 
                     <fieldset>
 
-                        <legend>Select an area:</legend>                        
-                        <div>
-                            <input type="radio" id="corkcounty" name="area" checked />
-                            <label for="corkcounty">Cork County</label>
-                        </div>                
-                        <div id="radio">
-                            <input type="radio" id="corkcity" name="area" />
-                            <label for="corkcity">Cork City</label>
-                        </div>                
-                        <div>
-                            <input   type="radio" id="othercounty" name="area" />
-                            <label for="othercounty">Other County</label>
-                        </div>                
+                        <legend>Select an area:</legend>  
+                                         
+                        <select id="pet-select">
+                                <option value="">--Please choose an area--</option>
+                                <option value="corkcity">Cork City</option>
+                                <option value="corkcounty">Cork County</option>
+                                <option value="other">Other</option>                                
+                            </select>
+                        
+                        <label for="check">	Please check to confirm you have reviewed and understand our privacy policy - where it states how we treat your personal information. 
+                        <input type="checkbox" required="required" id="check" name="check"/>
+                    </label>
+                        
                     </fieldset>
-
+                    <br/>
                         <div class="button">
                             <button type="submit">Get your personal quote</button>
                           </div>
@@ -88,7 +104,8 @@
    
     
 <div id="photo">    
-
+        <p class="contactinfo">&#9742; 021-234 2344  |&#9993; info@SOLAQUA.ie
+            </p>
     <img srcset="   img/front.jpg 320w,
                     img/front.jpg 480w,
                     img/front.jpg 800w"
@@ -100,7 +117,8 @@
 </div>
 
 <div id="main">    
-        <h1>Welcome to SOLAQUA, home of the best solar panels in Ireland.</h1>
+        <h1>Welcome to SOLAQUA</h1>
+        <p> Home of the best solar pannels in Ireland.</p>
         <p>Use our <a href="contact.html">quote form</a> to get your own personal quote for free.</p>
         <p>For information about us, <a href="about.html">click here.</a></p>
 
@@ -134,8 +152,30 @@
                     
                     
 </div>
+<hr/>
+<h1>How Does the Weather Affect Solar Panel Efficiency?</h1>
+<p>if you’re considering getting solar panels for your home, it’s important to understand
+     how the weather will affect solar panel efficiency. If for instance, your home is located in a region prone to hail and lightning,
+      it may be in your best interest to look at higher quality panels or additional grounding equipment.    
+    </p>
+    <p>
+            The good news—and there’s always good news with solar energy—is that photovoltaic (PV) solar panels have evolved to become incredibly durable, even in Earth’s most extreme environments. You’ll find them in Antarctica and Iceland.
+             You’ll find them in the scorching heat of the desert. Once you’re satisfied that they’re a good investment,
+              you may soon find your very own money-saving solar panels on your roof!
+    </p>
 
-                    
+            <h1>Solar Panels and Cloudy Days</h1>     
+            <p>
+                    There are some pretty standard myths that have unfortunately been attached to any talk of going solar, but the question “Do solar panels work on cloudy days?” is by far the most popular. 
+                    Before we can understand the effect clouds will have on solar panel efficiency, we first must understand what’s important to the smooth operation of your solar panels—namely sunlight.
+
+            </p>   
+            <p>
+                    The reason the “solar panels don’t work on cloudy days” idea is a myth, is because even though you can’t see the Sun, light is still getting through the clouds, even if only a little. Keep in mind we wouldn’t even be able to see anything if light wasn’t getting through!
+
+                    Luckily solar panels absorb both direct light and diffuse light; that is—light that is not directly shined from the Sun onto the panels. This light is reflected off of clouds, 
+                    buildings, and other shiny, light-colored surfaces. With any sunlight, your solar panels will produce electricity. Conversely, this is why solar panels do not produce at night time.
+            </p>
                     <section id="content"></section>
 </div>
 
