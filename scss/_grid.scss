@@ -83,6 +83,7 @@ Media Q Grid layout Tablet (max width 1050px)
 
     #photo {
         grid-area: photo;
+        
     }
     
     #main {
@@ -126,25 +127,24 @@ Media Q Grid layout Desktop (min width 1060px)
     
     #aside {
         grid-area: aside;
-        width: 25%; /* 240 / 960 */ 
+        width: 80%; 
         margin-left:  9.375%; /* 90 / 960 */ 
     }
 
     #photo {
         grid-area: photo;
-        margin-top: 1%;
-        width: 56.25%; /* 540 / 960 */ 
-        margin-left: 43.75%; /* 420 / 960 */
-        margin-right:  9.375%; /* 90 / 960 */
+        margin-top: 5%; 
+        width: 60%; /* 540 / 960 */ 
+        margin-left:    9.375%; /* 90 / 960 */
         
     }
     
     
     #main {
-        width: 56.25%; /* 540 / 960 */        
+        width: 80%;
+        margin-left:    9.375%; /* 90 / 960 */   
+        padding-left: 5%;        
         grid-area: main;
-        margin-left: 43.75%; /* 420 / 960 */ 
-        margin-right:  9.375%; /* 90 / 960 */
     }
 
     #button {

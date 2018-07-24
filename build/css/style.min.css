@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -111,27 +111,22 @@ Media Q Grid layout Desktop (min width 1060px)
     grid-area: head; }
   #aside {
     grid-area: aside;
-    width: 25%;
-    /* 240 / 960 */
+    width: 80%;
     margin-left: 9.375%;
     /* 90 / 960 */ }
   #photo {
     grid-area: photo;
-    margin-top: 1%;
-    width: 56.25%;
+    margin-top: 5%;
+    width: 60%;
     /* 540 / 960 */
-    margin-left: 43.75%;
-    /* 420 / 960 */
-    margin-right: 9.375%;
+    margin-left: 9.375%;
     /* 90 / 960 */ }
   #main {
-    width: 56.25%;
-    /* 540 / 960 */
-    grid-area: main;
-    margin-left: 43.75%;
-    /* 420 / 960 */
-    margin-right: 9.375%;
-    /* 90 / 960 */ }
+    width: 80%;
+    margin-left: 9.375%;
+    /* 90 / 960 */
+    padding-left: 5%;
+    grid-area: main; }
   #button {
     grid-area: button;
     display: none; }
@@ -139,7 +134,7 @@ Media Q Grid layout Desktop (min width 1060px)
     grid-area: foot; } }
 
 #main {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-top: 1%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -147,15 +142,19 @@ Media Q Grid layout Desktop (min width 1060px)
   background-color: #f6f3f3; }
 
 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25pt; }
+
+.h1form {
   color: #000000;
   text-decoration: underline #fabe44;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 25pt;
   margin-bottom: 5%; }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: underline #fabe44;
   font-size: 15pt;
   margin-bottom: 5%; }
@@ -163,12 +162,12 @@ h2 {
 h3 {
   display: inline;
   font-size: 15pt;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: underline #fabe44; }
 
 p {
-  padding-bottom: 5%;
-  margin-right: 5%;
+  padding-bottom: 1.5%;
+  margin-right: 1.5%;
   letter-spacing: 0.5pt; }
 
 .centre {
@@ -240,20 +239,18 @@ Media Q Grid layout Desktop (min width 1060px)
     text-align: justify; } }
 
 img {
-  max-width: 100%;
   height: auto; }
 
 .event {
   background-color: #91b21a;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 25pt;
+  font-size: 15pt;
   margin-bottom: 10%;
-  padding-top: 5%;
-  border-top-right-radius: 5%;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%; }
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 5%; }
 
 .quoteButton {
   background-color: #fabe44;
@@ -399,7 +396,6 @@ img {
 
 #aside {
   font-family: 'Roboto', sans-serif;
-  background-color: #e8eaea;
   width: 25%; }
 
 #quoteForm {

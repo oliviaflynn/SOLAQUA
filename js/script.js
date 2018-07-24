@@ -6,11 +6,10 @@ function cat(data) {                           // Callback when JSON loads
       // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
       //for (var i = 0; i < data.events.length; i++) {    // Loop through object
        newContent += '<div class="event">';
+       newContent += '<h1> Today&#39;s Weather</h1>';
+       newContent += '<p>' + data.name + ': ' + data.weather[0].description + '</p>';   
        
-       newContent += '<p>' + data.name + '</p>';
-       newContent += '<p>' + data.weather[0].main + '</p>';
-       newContent += '<p>' + data.weather[0].description + '</p>';
-       newContent += '<p>' + data.main.temp + '</p>';
+       
        newContent += '<img src=\"https://openweathermap.org/img/w/'+ data.weather[0].icon + '.png\">';
        newContent += '</div>';
       //}

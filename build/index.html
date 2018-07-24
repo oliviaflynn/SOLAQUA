@@ -36,8 +36,10 @@
 
 
 
-    <div id="aside">        <!-- Sticky Form -->
-
+    <div id="aside">  
+             
+            <a href="index.html"><img src="img/logo.png" alt="SOLAQUA Logo"></a>
+ <!-- Sticky Form -->
         <form id="quoteForm" action="/my-handling-form-page" method="post">
             <h1>Get a quote now</h1>
             <br/>
@@ -81,19 +83,19 @@
     </div>  
 
     <div id="button">
-        <button class="quoteButton">Get a quote now</button>
+        <button class="quoteButton" onclick="window.location.href='contact.html'">Get a quote now</button>
     </div>
    
     
-<div id="photo">
+<div id="photo">    
 
-    <div class="w3-content w3-display-container">
-        <img class="mySlides" src="img/1.jpg" style="width:100%">
-        <img class="mySlides" src="img/2.jpg" style="width:100%">
-        <img class="mySlides" src="img/3.jpg" style="width:100%">
-        <img class="mySlides" src="img/4.jpg" style="width:100%">    
-        
-      </div>
+    <img srcset="   img/front.jpg 320w,
+                    img/front.jpg 480w,
+                    img/front.jpg 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="img/front.jpg" alt="Image of Yellow House With Solar Pannels">
    
 </div>
 
@@ -133,7 +135,7 @@
                     
 </div>
 
-
+                    
                     <section id="content"></section>
 </div>
 
