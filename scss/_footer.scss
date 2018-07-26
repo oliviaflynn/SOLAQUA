@@ -1,3 +1,9 @@
+   /***************************
+****************************
+Media Q Grid layout Desktop (min width 1060px)
+****************************
+***************************/
+@media (min-width: 1060px){
 #foot {
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
@@ -8,4 +14,31 @@
     padding-right: 9.375%; /* 90 / 960 */
     padding-top: 1%;
     padding-bottom: 1%;
+}
+}
+
+/***************************
+****************************
+Media Q Grid layout Tablet (max width 1050px)
+****************************
+***************************/
+@media (max-width: 1050px){
+}
+
+/***************************
+****************************
+Media Q Grid layout Phone (max width 450px)
+****************************
+***************************/
+
+@media (max-width: 450px){
+    #foot {
+    max-width: 450px;
+         
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+    color: white;
+    background-color: #0076b2;    
+
+    }
 }
